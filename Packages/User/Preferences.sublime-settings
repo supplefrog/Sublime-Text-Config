@@ -1,0 +1,13 @@
+{
+	"theme": "Adaptive.sublime-theme",
+	"ignored_packages": [
+		"Package Control",
+	],
+	"vintage_start_in_command_mode": true,
+	"color_scheme": "Packages/Colorsublime - Themes/rainbow.tmTheme",
+    "font_face": "Lilex",
+	"font_size": 10,
+	"line_padding_top": 1,
+	"line_padding_bottom": 1,
+	"index_files": false,
+}

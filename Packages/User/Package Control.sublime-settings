@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Package Control",
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Colorsublime",
+		"GitGutter",
+		"Github Color Theme",
+		"LSP",
+		"LSP-marksman",
+		"LSP-PowerShellEditorServices",
+		"Markdown Extended",
+		"MarkdownEditing",
+		"Package Control",
+		"PowerShell",
+		"SideBarEnhancements",
+		"Theme - One",
+	],
+}

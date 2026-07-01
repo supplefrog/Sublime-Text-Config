@@ -1,0 +1,4 @@
+*.sublime-workspace
+*.sublime_session
+*.tmp
+.cache/
