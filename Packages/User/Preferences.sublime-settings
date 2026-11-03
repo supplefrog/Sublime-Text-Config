@@ -1,13 +1,13 @@
 {
-	"theme": "Adaptive.sublime-theme",
+	"theme": "One.sublime-theme",
 	"ignored_packages": [
 		"Package Control",
 	],
 	"vintage_start_in_command_mode": true,
-	"color_scheme": "Packages/Colorsublime - Themes/rainbow.tmTheme",
+	"color_scheme": "Packages/Theme - One/One Light.sublime-color-scheme",
     "font_face": "Lilex",
-	"font_size": 10,
+	"font_size": 12,
 	"line_padding_top": 1,
-	"line_padding_bottom": 1,
+	"line_padding_bottom": 2,
 	"index_files": false,
 }

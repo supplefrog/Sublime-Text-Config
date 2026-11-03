@@ -1,0 +1,14 @@
+{
+    "rules": [
+        {
+            "class": "icon_folder",
+            "content_margin": [8, 8],
+            "layer0.texture": "User/icons/folder_closed.png"
+        },
+        {
+            "class": "icon_folder",
+            "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+            "layer0.texture": "User/icons/folder_open.png"
+        }
+    ]
+}

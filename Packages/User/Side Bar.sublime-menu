@@ -1,0 +1,9 @@
+[
+    {"caption": "Browse Directoryâ€¦", "command": "browse_directory"},
+    {
+        "caption": "Browse Parent Directory",
+        "command": "browse_parent_directory"
+    },
+    {"caption": "Back", "command": "browse_directory_history", "args": {"direction": "back"}},
+    {"caption": "Forward", "command": "browse_directory_history", "args": {"direction": "forward"}}
+]
