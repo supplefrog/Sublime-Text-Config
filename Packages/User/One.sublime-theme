@@ -2,13 +2,42 @@
     "rules": [
         {
             "class": "icon_folder",
-            "content_margin": [8, 8],
+            "content_margin": [
+                8,
+                8
+            ],
             "layer0.texture": "User/icons/folder_closed.png"
         },
         {
             "class": "icon_folder",
-            "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+            "parents": [
+                {
+                    "class": "tree_row",
+                    "attributes": [
+                        "expanded"
+                    ]
+                }
+            ],
             "layer0.texture": "User/icons/folder_open.png"
+        },
+        {
+            "class": "sidebar_label",
+            "font.size": 14
+        },
+        {
+            "class": "sidebar_heading",
+            "font.size": 12
+        },
+        {
+            "class": "sidebar_tree",
+            "row_padding": [
+                8,
+                6,
+                6,
+                5
+            ],
+            "indent": 18,
+            "indent_offset": 16
         }
     ]
 }
