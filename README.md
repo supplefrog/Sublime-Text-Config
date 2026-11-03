@@ -1,6 +1,6 @@
 # Sublime Text Config
 
-Personal Sublime Text settings, Vim-compatible sidebar shortcut, One Light appearance, and directory navigation.
+Personal Sublime Text settings, Vim-compatible sidebar shortcut, One Light appearance, and automatic folder display.
 
 ## Restore
 
@@ -21,5 +21,3 @@ One Light with the matching One interface theme, Lilex at 12 points, and outline
 On Windows, **Ctrl+B** toggles the sidebar in both Vintage command and insert modes without changing modes. It takes priority over Vintage's optional Ctrl+B page-up binding. Vintage remains enabled, and files start in command mode.
 
 Opening a standalone file in a window with no project folders automatically shows its containing directory. Existing folder roots are preserved when opening more files. Untitled buffers do not add a folder.
-
-Right-click the sidebar for **Browse Directoryâ€¦**, **Browse Parent Directory**, **Back**, and **Forward**. The same actions are available under **File Tree:** in the command palette. Browse Directory changes the tree root in the current window while leaving open files in place. Back/Forward history lasts for the session and is reset if the plugin reloads. Parent navigation is available for windows with one folder root.

@@ -1,9 +1,0 @@
-[
-    {"caption": "File Tree: Browse Directory", "command": "browse_directory"},
-    {
-        "caption": "File Tree: Browse Parent Directory",
-        "command": "browse_parent_directory"
-    },
-    {"caption": "File Tree: Back", "command": "browse_directory_history", "args": {"direction": "back"}},
-    {"caption": "File Tree: Forward", "command": "browse_directory_history", "args": {"direction": "forward"}}
-]
