@@ -14,4 +14,4 @@ Install [Package Control](https://packagecontrol.io/installation) first, then re
 
 ## File tree sidebar
 
-Open a folder with **File > Open Folder** to see its files in the sidebar. If the sidebar is hidden, choose **View > Side Bar > Show Side Bar**. On Windows, `Ctrl+Alt+B` toggles the sidebar using the included user keymap. Sidebar visibility is saved in the window session, rather than in the user preferences copied above.
+Open a folder with **File > Open Folder** to see its files in the sidebar. If the sidebar is hidden, choose **View > Side Bar > Show Side Bar**. On Windows and Linux, `Ctrl+K`, then `Ctrl+B`, toggles the sidebar. Sidebar visibility is saved in the window session, rather than in the user preferences copied above.
