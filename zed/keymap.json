@@ -1,0 +1,10 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": { "ctrl-b": "workspace::ToggleRightDock" }
+  },
+  {
+    "context": "Editor",
+    "bindings": { "ctrl-b": "workspace::ToggleRightDock" }
+  }
+]

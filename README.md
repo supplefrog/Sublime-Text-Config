@@ -21,3 +21,9 @@ One Light with the matching One interface theme, Lilex at 12 points, and outline
 On Windows, **Ctrl+B** toggles the sidebar in both Vintage command and insert modes without changing modes. It takes priority over Vintage's optional Ctrl+B page-up binding. Vintage remains enabled, and files start in command mode.
 
 Opening a standalone file in a window with no project folders automatically shows its containing directory. Existing folder roots are preserved when opening more files. Untitled buffers do not add a folder.
+
+## Zed
+
+Copy `zed/settings.json` and `zed/keymap.json` into `%APPDATA%\Zed` on Windows. Merge them with any local preferences or bindings you want to keep.
+
+**Ctrl+B** toggles the right sidebar in Vim normal and insert modes. Opening a file with its containing folder from Explorer uses a separate local Nilesoft Shell integration.
