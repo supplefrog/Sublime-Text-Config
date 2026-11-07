@@ -26,24 +26,20 @@ Opening a standalone file in a window with no project folders automatically show
 
 ## Zed
 
-Copy `zed/settings.json` and `zed/keymap.json` into `%APPDATA%\Zed` on Windows. Merge them with any local preferences or bindings you want to keep.
+### Restore on Windows
 
-**Ctrl+B** toggles the right sidebar in Vim normal and insert modes.
+Install Zed using its standard per-user installer, Nilesoft Shell 1.9.15 or newer, and Python 3 with `pythonw.exe` on PATH. Clone this repo. From its root, run the following in an elevated PowerShell under the same Windows account that uses Zed.
 
-### Explorer folder tree on Windows
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -File .\zed\Restore-Zed.ps1 -RestartExplorer
+```
 
-Right-click a file in Explorer and choose **Open with Zed** to open it inside a workspace rooted at its containing folder.
+The script replaces your Zed settings and keymap with the repo's copies, installs the Explorer launcher, and adds its Nilesoft import. It backs up files it replaces to `%APPDATA%\Zed\restore-backups` and prints the backup folder. For a nonstandard Nilesoft installation, pass `-NilesoftRoot` with the path to the folder containing `shell.nss`.
 
-Use Zed's standard per-user Windows installation, Nilesoft Shell 1.9.15 or newer, and Python 3 with `pythonw.exe` on PATH. Run `Get-Command pythonw.exe` in PowerShell to check the Python path.
+Add `-WhatIf` to preview the operation. The restart can close File Explorer windows. To reload the menu manually, omit `-RestartExplorer`, then hold **Ctrl** and right-click an empty area of the taskbar. [Nilesoft reload instructions](https://nilesoft.org/docs/get-started)
 
-1. Copy `zed/open-with-tree.pyw` into `%APPDATA%\Zed`.
-2. Copy `zed/zed-folder-tree.nss` into the `imports` directory under the Nilesoft Shell installation. The standard location is `C:\Program Files\Nilesoft Shell\imports`.
-3. Add this line once to Nilesoft's `shell.nss`:
+### Sidebar and Explorer
 
-   ```
-   import 'imports/zed-folder-tree.nss'
-   ```
+**Ctrl+B** toggles the right sidebar in Vim normal and insert modes. Right-click a file in Explorer and choose **Open with Zed** to open it inside a workspace rooted at its containing folder.
 
-4. Hold **Ctrl** and right-click an empty area of the taskbar to reload the menu. [Nilesoft reload instructions](https://nilesoft.org/docs/get-started)
-
-If Zed asks whether to trust a new folder, you can stay in Restricted Mode and still browse its tree. To remove the integration, remove the import from `shell.nss` and reload the menu.
+If Zed asks whether to trust a new folder, you can stay in Restricted Mode and still browse its tree. To remove the Explorer integration, remove the `imports/zed-folder-tree.nss` import from `shell.nss` and reload the menu.
